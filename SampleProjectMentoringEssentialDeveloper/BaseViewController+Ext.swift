@@ -7,9 +7,8 @@
 
 import UIKit
 
-class BaseViewController: UIViewController {
-    override func viewDidLoad() {
-        super.viewDidLoad()
+extension BaseViewController {
+    @objc func assignTitleWithClassName() {
         title = "\(Self.self)"
     }
 }
