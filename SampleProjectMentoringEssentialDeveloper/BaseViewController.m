@@ -17,6 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self assignTitleWithClassName];
+    [self setHidesBottomBarWhenPushed:TRUE];
 }
 
 /*
