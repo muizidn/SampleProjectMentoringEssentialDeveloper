@@ -9,6 +9,7 @@
 #import "SampleProjectMentoringEssentialDeveloper-Swift.h"
 
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet UILabel *screenName;
 
 @end
 
@@ -20,7 +21,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self.view setBackgroundColor:UIColor.brownColor];
+    NSMutableString *mutableTitle = [[NSMutableString alloc] initWithString:self.title];
+    [mutableTitle appendString:@" - "];
+    [mutableTitle appendString:self.screenName.text];
+    [self setTitle: mutableTitle];
 }
 
 

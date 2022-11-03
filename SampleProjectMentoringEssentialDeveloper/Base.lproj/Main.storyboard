@@ -17,10 +17,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="6sC-U1-vIa">
-                                <rect key="frame" x="20" y="108" width="374" height="31"/>
+                                <rect key="frame" x="20" y="108" width="374" height="62"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N45-mp-M3h">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2I5-GU-80c">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="31"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N45-mp-M3h">
+                                        <rect key="frame" x="0.0" y="31" width="374" height="31"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="go To Second"/>
                                         <connections>
@@ -31,7 +37,7 @@
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemPinkColor"/>
                         <constraints>
                             <constraint firstItem="6sC-U1-vIa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="UkJ-UR-Bg0"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6sC-U1-vIa" secondAttribute="trailing" constant="20" id="YD0-D3-SK5"/>
@@ -39,14 +45,164 @@
                             <constraint firstItem="6sC-U1-vIa" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="oth-Un-ky3"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="ej2-M7-nVG"/>
+                    <tabBarItem key="tabBarItem" title="Home" id="ej2-M7-nVG"/>
                     <navigationItem key="navigationItem" id="J5s-HI-0fZ">
                         <barButtonItem key="rightBarButtonItem" title="Second" id="w64-Df-6O1"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="screenName" destination="2I5-GU-80c" id="tUx-QH-OBM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1760.8695652173915" y="-47.544642857142854"/>
+        </scene>
+        <!--ViewController-->
+        <scene sceneID="mNx-eh-K6V">
+            <objects>
+                <viewController id="feK-4X-k5V" userLabel="ViewController" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="B00-WS-mfI">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="kdu-qi-foO">
+                                <rect key="frame" x="20" y="108" width="374" height="62"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Store" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rgm-Xw-abT">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="31"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gfm-ZB-JnG">
+                                        <rect key="frame" x="0.0" y="31" width="374" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="go To Second"/>
+                                        <connections>
+                                            <action selector="goToSecond:" destination="feK-4X-k5V" eventType="touchUpInside" id="mz4-lO-VlB"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="E0a-6X-Y0e"/>
+                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                        <constraints>
+                            <constraint firstItem="E0a-6X-Y0e" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="kdu-qi-foO" secondAttribute="bottom" constant="20" id="DzC-ji-qDG"/>
+                            <constraint firstItem="kdu-qi-foO" firstAttribute="top" secondItem="E0a-6X-Y0e" secondAttribute="top" constant="20" id="Zyz-Tn-qd5"/>
+                            <constraint firstItem="kdu-qi-foO" firstAttribute="leading" secondItem="E0a-6X-Y0e" secondAttribute="leading" constant="20" id="daM-8e-8bn"/>
+                            <constraint firstItem="E0a-6X-Y0e" firstAttribute="trailing" secondItem="kdu-qi-foO" secondAttribute="trailing" constant="20" id="jrM-4n-Z3c"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Store" id="m1P-z6-bbC"/>
+                    <navigationItem key="navigationItem" id="16z-OF-5e3">
+                        <barButtonItem key="rightBarButtonItem" title="Second" id="9aa-FD-kzv"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="screenName" destination="rgm-Xw-abT" id="VvR-Qa-Lah"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vQb-ly-SLO" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1761" y="692"/>
+        </scene>
+        <!--ViewController-->
+        <scene sceneID="7xd-lp-QZI">
+            <objects>
+                <viewController id="0We-l4-CuW" userLabel="ViewController" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JNV-u3-OVQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="hcQ-be-hAo">
+                                <rect key="frame" x="20" y="108" width="374" height="62"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Notification" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qzF-Sn-2eN">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="31"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vat-Wi-mGh">
+                                        <rect key="frame" x="0.0" y="31" width="374" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="go To Second"/>
+                                        <connections>
+                                            <action selector="goToSecond:" destination="0We-l4-CuW" eventType="touchUpInside" id="4XP-SP-GbZ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="zrS-J0-gBG"/>
+                        <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                        <constraints>
+                            <constraint firstItem="hcQ-be-hAo" firstAttribute="leading" secondItem="zrS-J0-gBG" secondAttribute="leading" constant="20" id="SfI-ev-efu"/>
+                            <constraint firstItem="hcQ-be-hAo" firstAttribute="top" secondItem="zrS-J0-gBG" secondAttribute="top" constant="20" id="bmk-OH-5q4"/>
+                            <constraint firstItem="zrS-J0-gBG" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="hcQ-be-hAo" secondAttribute="bottom" constant="20" id="hNU-Vr-KFA"/>
+                            <constraint firstItem="zrS-J0-gBG" firstAttribute="trailing" secondItem="hcQ-be-hAo" secondAttribute="trailing" constant="20" id="yNN-NN-STB"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Notification" id="nnx-LP-aCU"/>
+                    <navigationItem key="navigationItem" id="ebl-Dm-z1j">
+                        <barButtonItem key="rightBarButtonItem" title="Second" id="3ie-r7-T8B"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="screenName" destination="qzF-Sn-2eN" id="vTj-0E-cDI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9FV-Pn-ROl" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1761" y="1379"/>
+        </scene>
+        <!--ViewController-->
+        <scene sceneID="7WP-Pq-M7D">
+            <objects>
+                <viewController id="8gH-Jf-8eB" userLabel="ViewController" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0Sh-DL-OMH">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="P1o-DJ-6iQ">
+                                <rect key="frame" x="20" y="108" width="374" height="62"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Profile" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zCi-dV-HJd">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="31"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8lt-Fu-ITD">
+                                        <rect key="frame" x="0.0" y="31" width="374" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="go To Second"/>
+                                        <connections>
+                                            <action selector="goToSecond:" destination="8gH-Jf-8eB" eventType="touchUpInside" id="noz-Ym-l0V"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="psq-5b-ci1"/>
+                        <color key="backgroundColor" systemColor="systemMintColor"/>
+                        <constraints>
+                            <constraint firstItem="P1o-DJ-6iQ" firstAttribute="leading" secondItem="psq-5b-ci1" secondAttribute="leading" constant="20" id="67q-vr-UfB"/>
+                            <constraint firstItem="P1o-DJ-6iQ" firstAttribute="top" secondItem="psq-5b-ci1" secondAttribute="top" constant="20" id="Lgx-gQ-Xwg"/>
+                            <constraint firstItem="psq-5b-ci1" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="P1o-DJ-6iQ" secondAttribute="bottom" constant="20" id="lQ0-Zz-WIe"/>
+                            <constraint firstItem="psq-5b-ci1" firstAttribute="trailing" secondItem="P1o-DJ-6iQ" secondAttribute="trailing" constant="20" id="tdh-0Z-Hgs"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Profile" id="HtL-ET-Zsh"/>
+                    <navigationItem key="navigationItem" id="t9x-TK-X24">
+                        <barButtonItem key="rightBarButtonItem" title="Second" id="1DW-kd-WC7"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="screenName" destination="zCi-dV-HJd" id="wMS-cW-osG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jmd-0G-9vB" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1761" y="2142"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="XQe-Ei-Tb7">
@@ -78,6 +234,9 @@
                     </tabBar>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="1v9-Jj-nmN"/>
+                        <segue destination="feK-4X-k5V" kind="relationship" relationship="viewControllers" id="5Gs-PK-4SU"/>
+                        <segue destination="0We-l4-CuW" kind="relationship" relationship="viewControllers" id="evc-3P-Vfo"/>
+                        <segue destination="8gH-Jf-8eB" kind="relationship" relationship="viewControllers" id="HSn-Ib-5zz"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Se-nm-4d9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -86,8 +245,17 @@
         </scene>
     </scenes>
     <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        <systemColor name="systemMintColor">
+            <color red="0.0" green="0.7803921568627451" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
