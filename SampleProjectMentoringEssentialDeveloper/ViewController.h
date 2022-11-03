@@ -10,6 +10,8 @@
 
 @interface ViewController : BaseViewController
 
+- (IBAction)goToScreen:(UIButton *)sender;
+- (void)setGoToButtonTitleWithName: (NSString *) name;
 
 @end
 

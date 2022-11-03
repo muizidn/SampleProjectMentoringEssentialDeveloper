@@ -18,6 +18,12 @@
 		9A39115829133FFC0021905C /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A39115729133FFC0021905C /* SecondViewController.swift */; };
 		9A39115A2913402A0021905C /* BaseViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3911592913402A0021905C /* BaseViewController+Ext.swift */; };
 		9A391161291343150021905C /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A391160291343150021905C /* BaseViewController.m */; };
+		9A391163291347C40021905C /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A391162291347C40021905C /* WebViewController.swift */; };
+		9A391165291348110021905C /* GoogleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A391164291348110021905C /* GoogleViewController.swift */; };
+		9A391167291348680021905C /* YahooViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A391166291348680021905C /* YahooViewController.swift */; };
+		9A39116A29134B890021905C /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A39116929134B890021905C /* HomeViewController.m */; };
+		9A39116C29134C8D0021905C /* StoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A39116B29134C8D0021905C /* StoreViewController.swift */; };
+		9A39116E29134D150021905C /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A39116D29134D150021905C /* NotificationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +45,13 @@
 		9A3911592913402A0021905C /* BaseViewController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BaseViewController+Ext.swift"; sourceTree = "<group>"; };
 		9A39115F291343150021905C /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		9A391160291343150021905C /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		9A391162291347C40021905C /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		9A391164291348110021905C /* GoogleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleViewController.swift; sourceTree = "<group>"; };
+		9A391166291348680021905C /* YahooViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YahooViewController.swift; sourceTree = "<group>"; };
+		9A39116829134B890021905C /* HomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		9A39116929134B890021905C /* HomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		9A39116B29134C8D0021905C /* StoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreViewController.swift; sourceTree = "<group>"; };
+		9A39116D29134D150021905C /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +95,13 @@
 				9A39113F29133F340021905C /* SceneDelegate.m */,
 				9A39114129133F340021905C /* ViewController.h */,
 				9A39114229133F340021905C /* ViewController.m */,
+				9A39116829134B890021905C /* HomeViewController.h */,
+				9A39116929134B890021905C /* HomeViewController.m */,
+				9A39116B29134C8D0021905C /* StoreViewController.swift */,
+				9A39116D29134D150021905C /* NotificationViewController.swift */,
+				9A391162291347C40021905C /* WebViewController.swift */,
+				9A391164291348110021905C /* GoogleViewController.swift */,
+				9A391166291348680021905C /* YahooViewController.swift */,
 				9A39114429133F340021905C /* Main.storyboard */,
 				9A39114729133F350021905C /* Assets.xcassets */,
 				9A39114929133F350021905C /* LaunchScreen.storyboard */,
@@ -166,11 +186,17 @@
 			files = (
 				9A39114329133F340021905C /* ViewController.m in Sources */,
 				9A39113D29133F340021905C /* AppDelegate.m in Sources */,
+				9A391165291348110021905C /* GoogleViewController.swift in Sources */,
 				9A39114E29133F350021905C /* main.m in Sources */,
 				9A39115829133FFC0021905C /* SecondViewController.swift in Sources */,
 				9A39114029133F340021905C /* SceneDelegate.m in Sources */,
+				9A39116A29134B890021905C /* HomeViewController.m in Sources */,
 				9A391161291343150021905C /* BaseViewController.m in Sources */,
+				9A39116C29134C8D0021905C /* StoreViewController.swift in Sources */,
+				9A39116E29134D150021905C /* NotificationViewController.swift in Sources */,
+				9A391167291348680021905C /* YahooViewController.swift in Sources */,
 				9A39115A2913402A0021905C /* BaseViewController+Ext.swift in Sources */,
+				9A391163291347C40021905C /* WebViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

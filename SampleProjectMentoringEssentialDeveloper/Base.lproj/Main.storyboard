@@ -11,7 +11,7 @@
         <!--ViewController-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" userLabel="ViewController" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" userLabel="ViewController" customClass="HomeViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -28,9 +28,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N45-mp-M3h">
                                         <rect key="frame" x="0.0" y="31" width="374" height="31"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="go To Second"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="go To Screen"/>
                                         <connections>
-                                            <action selector="goToSecond:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qcg-9Z-7mH"/>
+                                            <action selector="goToScreen:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qcg-9Z-7mH"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -50,6 +50,7 @@
                         <barButtonItem key="rightBarButtonItem" title="Second" id="w64-Df-6O1"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="goToScreen" destination="N45-mp-M3h" id="S8c-ML-2qi"/>
                         <outlet property="screenName" destination="2I5-GU-80c" id="tUx-QH-OBM"/>
                     </connections>
                 </viewController>
@@ -60,7 +61,7 @@
         <!--ViewController-->
         <scene sceneID="mNx-eh-K6V">
             <objects>
-                <viewController id="feK-4X-k5V" userLabel="ViewController" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="feK-4X-k5V" userLabel="ViewController" customClass="StoreViewController" customModule="SampleProjectMentoringEssentialDeveloper" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="B00-WS-mfI">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -77,9 +78,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gfm-ZB-JnG">
                                         <rect key="frame" x="0.0" y="31" width="374" height="31"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="go To Second"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="go To Screen"/>
                                         <connections>
-                                            <action selector="goToSecond:" destination="feK-4X-k5V" eventType="touchUpInside" id="mz4-lO-VlB"/>
+                                            <action selector="goToScreen:" destination="feK-4X-k5V" eventType="touchUpInside" id="mz4-lO-VlB"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -99,6 +100,7 @@
                         <barButtonItem key="rightBarButtonItem" title="Second" id="9aa-FD-kzv"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="goToScreen" destination="Gfm-ZB-JnG" id="aSQ-dv-6wB"/>
                         <outlet property="screenName" destination="rgm-Xw-abT" id="VvR-Qa-Lah"/>
                     </connections>
                 </viewController>
@@ -109,7 +111,7 @@
         <!--ViewController-->
         <scene sceneID="7xd-lp-QZI">
             <objects>
-                <viewController id="0We-l4-CuW" userLabel="ViewController" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="0We-l4-CuW" userLabel="ViewController" customClass="NotificationViewController" customModule="SampleProjectMentoringEssentialDeveloper" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="JNV-u3-OVQ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -126,9 +128,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vat-Wi-mGh">
                                         <rect key="frame" x="0.0" y="31" width="374" height="31"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="go To Second"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="go To Screen"/>
                                         <connections>
-                                            <action selector="goToSecond:" destination="0We-l4-CuW" eventType="touchUpInside" id="4XP-SP-GbZ"/>
+                                            <action selector="goToScreen:" destination="0We-l4-CuW" eventType="touchUpInside" id="4XP-SP-GbZ"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -148,6 +150,7 @@
                         <barButtonItem key="rightBarButtonItem" title="Second" id="3ie-r7-T8B"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="goToScreen" destination="Vat-Wi-mGh" id="Z3M-bH-PWY"/>
                         <outlet property="screenName" destination="qzF-Sn-2eN" id="vTj-0E-cDI"/>
                     </connections>
                 </viewController>
@@ -175,9 +178,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8lt-Fu-ITD">
                                         <rect key="frame" x="0.0" y="31" width="374" height="31"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="go To Second"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="go To Screen"/>
                                         <connections>
-                                            <action selector="goToSecond:" destination="8gH-Jf-8eB" eventType="touchUpInside" id="noz-Ym-l0V"/>
+                                            <action selector="goToScreen:" destination="8gH-Jf-8eB" eventType="touchUpInside" id="noz-Ym-l0V"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -197,6 +200,7 @@
                         <barButtonItem key="rightBarButtonItem" title="Second" id="1DW-kd-WC7"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="goToScreen" destination="8lt-Fu-ITD" id="OOb-7T-rkZ"/>
                         <outlet property="screenName" destination="zCi-dV-HJd" id="wMS-cW-osG"/>
                     </connections>
                 </viewController>
@@ -229,6 +233,7 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="Sub-R9-5Y6"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="3U9-za-LnE">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>

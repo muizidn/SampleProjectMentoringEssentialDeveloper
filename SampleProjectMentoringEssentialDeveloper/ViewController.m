@@ -10,13 +10,12 @@
 
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *screenName;
+@property (weak, nonatomic) IBOutlet UIButton *goToScreen;
 
 @end
 
 @implementation ViewController
-- (IBAction)goToSecond:(UIBarButtonItem *)sender {
-    SecondViewController *vc = [[SecondViewController alloc]initWithNibName:@"SecondViewController" bundle:nil];
-    [self.navigationController pushViewController:vc animated:TRUE];
+- (IBAction)goToScreen:(UIButton *)sender {
 }
 
 - (void)viewDidLoad {
@@ -25,6 +24,13 @@
     [mutableTitle appendString:@" - "];
     [mutableTitle appendString:self.screenName.text];
     [self setTitle: mutableTitle];
+}
+
+- (void)setGoToButtonTitleWithName: (NSString *) name
+{
+    NSMutableString *mutableButtonTitle = [[NSMutableString alloc] initWithString:@"goTo"];
+    [mutableButtonTitle appendString:name];
+    [self.goToScreen setTitle:mutableButtonTitle forState:UIControlStateNormal];
 }
 
 
