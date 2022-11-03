@@ -6,16 +6,21 @@
 //
 
 #import "ViewController.h"
+#import "SampleProjectMentoringEssentialDeveloper-Swift.h"
 
 @interface ViewController ()
 
 @end
 
 @implementation ViewController
+- (IBAction)goToSecond:(UIBarButtonItem *)sender {
+    SecondViewController *vc = [[SecondViewController alloc]initWithNibName:@"SecondViewController" bundle:nil];
+    [self.navigationController pushViewController:vc animated:TRUE];
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    [self.view setBackgroundColor:UIColor.greenColor];
 }
 
 
