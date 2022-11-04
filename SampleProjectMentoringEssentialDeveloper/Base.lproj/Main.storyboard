@@ -45,7 +45,7 @@
                             <constraint firstItem="6sC-U1-vIa" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="oth-Un-ky3"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Home" id="ej2-M7-nVG"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="home" id="ej2-M7-nVG"/>
                     <navigationItem key="navigationItem" id="J5s-HI-0fZ">
                         <barButtonItem key="rightBarButtonItem" title="Second" id="w64-Df-6O1"/>
                     </navigationItem>
@@ -95,7 +95,7 @@
                             <constraint firstItem="E0a-6X-Y0e" firstAttribute="trailing" secondItem="kdu-qi-foO" secondAttribute="trailing" constant="20" id="jrM-4n-Z3c"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Store" id="m1P-z6-bbC"/>
+                    <tabBarItem key="tabBarItem" title="Store" image="store" id="m1P-z6-bbC"/>
                     <navigationItem key="navigationItem" id="16z-OF-5e3">
                         <barButtonItem key="rightBarButtonItem" title="Second" id="9aa-FD-kzv"/>
                     </navigationItem>
@@ -145,7 +145,7 @@
                             <constraint firstItem="zrS-J0-gBG" firstAttribute="trailing" secondItem="hcQ-be-hAo" secondAttribute="trailing" constant="20" id="yNN-NN-STB"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Notification" id="nnx-LP-aCU"/>
+                    <tabBarItem key="tabBarItem" title="Notification" image="notification" id="nnx-LP-aCU"/>
                     <navigationItem key="navigationItem" id="ebl-Dm-z1j">
                         <barButtonItem key="rightBarButtonItem" title="Second" id="3ie-r7-T8B"/>
                     </navigationItem>
@@ -195,7 +195,7 @@
                             <constraint firstItem="psq-5b-ci1" firstAttribute="trailing" secondItem="P1o-DJ-6iQ" secondAttribute="trailing" constant="20" id="tdh-0Z-Hgs"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Profile" id="HtL-ET-Zsh"/>
+                    <tabBarItem key="tabBarItem" title="Profile" image="profile" id="HtL-ET-Zsh"/>
                     <navigationItem key="navigationItem" id="t9x-TK-X24">
                         <barButtonItem key="rightBarButtonItem" title="Second" id="1DW-kd-WC7"/>
                     </navigationItem>
@@ -235,7 +235,7 @@
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="3U9-za-LnE">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="1v9-Jj-nmN"/>
@@ -250,6 +250,10 @@
         </scene>
     </scenes>
     <resources>
+        <image name="home" width="42.666667938232422" height="42.666667938232422"/>
+        <image name="notification" width="42.666667938232422" height="42.666667938232422"/>
+        <image name="profile" width="42.666667938232422" height="42.666667938232422"/>
+        <image name="store" width="42.666667938232422" height="42.666667938232422"/>
         <systemColor name="systemMintColor">
             <color red="0.0" green="0.7803921568627451" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

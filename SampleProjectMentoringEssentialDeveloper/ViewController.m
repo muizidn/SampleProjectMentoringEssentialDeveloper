@@ -20,10 +20,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    NSMutableString *mutableTitle = [[NSMutableString alloc] initWithString:self.title];
-    [mutableTitle appendString:@" - "];
-    [mutableTitle appendString:self.screenName.text];
-    [self setTitle: mutableTitle];
+    [self setTitle: self.screenName.text];
 }
 
 - (void)setGoToButtonTitleWithName: (NSString *) name

@@ -19,6 +19,7 @@ class SecondViewController: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = "ListViewController"
         view.addSubview(table)
         
         safeIndex.viewModel = viewModel

@@ -21,7 +21,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self setGoToButtonTitleWithName:@" Second - Native - Swift"];
+    [self setGoToButtonTitleWithName:@" List - Native - Swift"];
 }
 
 /*
