@@ -9,9 +9,11 @@ import UIKit
 
 class GoogleViewController: WebViewController {
 
+    var searchQuery: String = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        setUrl(url: URL(string: "https://www.google.com")!)
+        setUrl(url: URL(string: "https://www.google.com/search?q=\(searchQuery)")!)
     }
     
 

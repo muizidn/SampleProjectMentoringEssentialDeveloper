@@ -7,6 +7,8 @@
 
 import UIKit
 
+// Sample ViewController that go to webview
+
 class StoreViewController: ViewController {
 
     override func viewDidLoad() {
@@ -17,6 +19,7 @@ class StoreViewController: ViewController {
     
     override func go(toScreen sender: UIButton!) {
         let vc = GoogleViewController()
+        vc.searchQuery = "swiftui"
         navigationController?.pushViewController(vc, animated: true)
     }
     

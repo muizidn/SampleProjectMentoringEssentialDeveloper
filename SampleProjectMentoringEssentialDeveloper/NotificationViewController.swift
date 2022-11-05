@@ -17,6 +17,8 @@ class NotificationViewController: ViewController {
     
     override func go(toScreen sender: UIButton!) {
         let vc = YahooViewController()
+        vc.isFromNews = true
+        vc.phrase = "covid"
         navigationController?.pushViewController(vc, animated: true)
     }
     

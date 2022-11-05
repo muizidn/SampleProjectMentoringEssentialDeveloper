@@ -161,7 +161,7 @@
         <!--ViewController-->
         <scene sceneID="7WP-Pq-M7D">
             <objects>
-                <viewController id="8gH-Jf-8eB" userLabel="ViewController" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="8gH-Jf-8eB" userLabel="ViewController" customClass="ProfileViewController" customModule="SampleProjectMentoringEssentialDeveloper" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0Sh-DL-OMH">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -169,7 +169,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="P1o-DJ-6iQ">
                                 <rect key="frame" x="20" y="108" width="374" height="62"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Profile" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zCi-dV-HJd">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Profile" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zCi-dV-HJd" customClass="ThirdPartyLabelView" customModule="ThirdParty">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="31"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>

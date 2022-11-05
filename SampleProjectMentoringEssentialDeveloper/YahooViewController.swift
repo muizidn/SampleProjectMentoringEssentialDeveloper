@@ -9,9 +9,12 @@ import UIKit
 
 class YahooViewController: WebViewController {
 
+    var phrase = ""
+    var isFromNews = true
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        setUrl(url: URL(string: "https://www.yahoo.com")!)
+        setUrl(url: URL(string: "https://search.yahoo.com/search?p=\(phrase)" + (isFromNews ? "&fr=news" : ""))!)
     }
     
 
